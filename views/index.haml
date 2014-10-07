@@ -1,0 +1,52 @@
+!!!
+%html
+  %head
+    %link{ rel: "stylesheet", href: "http://yui.yahooapis.com/pure/0.5.0/pure-min.css" }
+    %title Ungif!
+  %body
+    :sass
+      .splash-container
+        background: #1f8dd6
+        z-index: 1
+        overflow: hidden
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        position: fixed !important
+      .splash
+        width: 50%
+        height: 50%
+        margin: auto
+        position: absolute
+        top: 100px
+        left: 0
+        bottom: 0
+        right: 0
+        text-align: center
+        text-transform: uppercase
+      .splash-head
+        font-size: 300%
+        color: white
+        border: 3px solid white
+        padding: 1em 1.6em
+        font-weight: 100
+        border-radius: 5px
+        line-height: 1em
+      .pure-input-1-2
+        margin: auto !important
+      .button-success
+        background: rgb(28, 184, 65)
+        color: white
+        border-radius: 4px
+        text-shadow: 0 1px 1px rgba(0,0,0,0.2)
+    .splash-container
+      .splash
+        %h1.splash-head Ungif everything!
+        %p
+          %form.pure-form{ action: 'ungif', method: 'get' }
+            %fieldset.pure-group
+              %input{ type: "text", class: "pure-input-1-2", placeholder: "URL", name: 'url' }
+              %input{ type: "text", class: "pure-input-1-2", placeholder: "Size (80x80)" }
+
+            %button{ type: "submit", class: "pure-button pure-input-1-2 button-success" } Ungif!

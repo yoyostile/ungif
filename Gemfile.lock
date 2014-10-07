@@ -6,10 +6,13 @@ GEM
       addressable (~> 2.3)
       multi_json (~> 1.0)
       rack
+    haml (4.0.5)
+      tilt
     multi_json (1.10.1)
     rack (1.5.2)
     rack-protection (1.5.3)
       rack
+    sass (3.4.5)
     sinatra (1.4.5)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -21,4 +24,6 @@ PLATFORMS
 
 DEPENDENCIES
   dragonfly
+  haml
+  sass
   sinatra

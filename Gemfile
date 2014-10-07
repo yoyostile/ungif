@@ -4,3 +4,5 @@ ruby '2.1.2'
 
 gem 'sinatra'
 gem 'dragonfly'
+gem 'haml'
+gem 'sass'
