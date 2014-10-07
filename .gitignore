@@ -3,3 +3,5 @@
 dragonfly.log
 .sass-cache/*
 .sass-cache
+body/*
+meta/*
