@@ -9,5 +9,9 @@ end
 get '/ungif' do
   url = params[:url]
   size = params[:size] || '80x80'
-  Dragonfly.app.fetch_url(url).thumb("#{size}#", 'format' => 'jpg', 'frame' => 5).to_response(env)
+  if url
+    Dragonfly.app.fetch_url(url).thumb("#{size}#", 'format' => 'jpg', 'frame' => 0).to_response(env)
+  else
+    "Woot"
+  end
 end
